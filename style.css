@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 600px;
+    background-image: url("img/main_image.png");
+    background-size: 100%;
+    background-position: center;
+}
+
+.navigation {
+    width: 100%;
+
+}
+
+.link {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.link li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.link a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #438FF6;
+
+}
+
+li.button_contact {
+    /* float: right; */
+    position: absolute;
+    right: 10%;
+    background-color: #438FF6;
+    height: 50px;
+    top: 38px;
+    color: white;
+}
+
+li.button_contact h3 {
+    margin: 5px;
+}
+
+.info {
+    float: left;
+    margin-top: 40px;
+
+}
+
+.info h1 {
+    color: #438FF6;
+    margin-left: 216px;
+    font-size: xxx-large;
+}
+
+.info p {
+    color: #EDF1F6;
+    margin-left: 216px;
+    font-size: x-large;
+}
+
+.button {
+    margin-left: 216px;
+    background-color: #438FF6;
+    padding: 16px;
+    font-size: large;
+    /* font-weight: bold; */
+    color: white;
+}
+
+/*image{
+    float: left;
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+}*/
+.about {
+    /* float: left; */
+    height: 430px;
+    /* margin-top: 40px; */
+    background-image: url('img/portfolio.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.image1 {
+    margin: 50px;
+    height: 80%;
+    width: 35%;
+    display: inline-block;
+}
+
+.image1 img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.intro {
+    float: right;
+    margin-right: 178px;
+}
+
+.intro h1 {
+    float: right;
+    margin-right: 346px;
+    font-size: 49px;
+}
+
+.intro p {
+    font-size: larger;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.hire {
+    background-color: #021564;
+    padding: 16px;
+    font-size: large;
+}
+
+.hire a,
+.resume a,
+.button a,
+.button1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.resume {
+    background-color: #021564;
+    padding: 16px;
+    font-size: large;
+    /* font-weight: bold; */
+    color: white;
+
+}
+
+.skills {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+.skills h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.skills h3 {
+    font-size: 20px;
+}
+
+.tools {
+    float: left;
+    width: 40%;
+    margin-left: 84px;
+    /*margin-bottom: 35px;*/
+}
+
+.languages {
+    float: right;
+    width: 40%;
+    margin-right: 108px;
+
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #EBEEEF;
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #3B86FF;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.experience {
+    width: 100%;
+    height: 327px;
+    background-image: url('img/exp_image.jpg');
+    background-position: center;
+    margin-top: 68px;
+    opacity: 0.7;
+}
+
+.exp .my_work {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.exp {
+    height: 100%;
+    width: 100%;
+}
+
+.exp h1 {
+    color: #F5F8FC;
+    text-align: center;
+    font-size: 44px;
+    margin: 0px;
+}
+
+.exp p {
+    color: #F5F8FC;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.my_project {
+    width: 100%;
+    height: 897px;
+    background-color: #F6F4F4;
+}
+
+.my_project h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.web_page p {
+    text-align: center;
+    font-weight: bold;
+    color: #707070;
+    font-size: x-large;
+}
+
+.web_page {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.web_page td {
+    cursor: pointer;
+}
+
+.web_page img {
+    display: block;
+    margin: auto;
+}
+
+.last {
+    height: 275px;
+    text-align: center;
+}
+
+.last h1 {
+    font-size: 52px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.last p {
+    color: #B6B6BD;
+    font-size: x-large;
+    margin-top: auto;
+}
+
+.footer {
+    padding: 30px 30px 20px 30px;
+    color: white;
+    background-color: #100f0f;
+    /* border-top: 1px solid #e5e5e5; */
+    height: 230px;
+    font-family: sans-serif;
+}
+
+.social {
+    display: flex;
+    width: 100%;
+}
+
+.get_touch h4 {
+    font-weight: bold;
+    color: #D8D8D8;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
+.get_touch p {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.get_touch {
+    width: 33%;
+    display: inline-block;
+}
+
+.get_touch a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.get_touch .button1 {
+    background-color: #438FF6;
+    padding: 10px;
+    font-size: large;
+    /* font-weight: bold; */
+    color: white;
+    margin-top: 10px;
+}
+
+.get_touch .button1 a {
+    font-size: 15px;
+    padding: 0px;
+}
+
+.get_touch img {
+    height: 40px;
+    width: 40px;
+}
+
+.get_touch h3 {
+    font-size: 32px;
+    margin: auto;
+}
+
+.social .header_touch {
+    margin-top: 0px;
+}
+
+.get_touch.social_touch a {
+    display: inline-block;
+}
