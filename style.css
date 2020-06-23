@@ -1,5 +1,11 @@
+/*@media screen and (min-width:320px)
+and (max-width:2560px){
+} */
 * {
     box-sizing: border-box;
+}
+*{
+    max-width: 100%;
 }
 
 .header {
@@ -7,6 +13,7 @@
     background-image: url("img/main_image.png");
     background-size: 100%;
     background-position: center;
+    width: 100%;
 }
 
 .navigation {
@@ -85,12 +92,14 @@ li.button_contact h3 {
     width: 50px;
 }*/
 .about {
+    display: flex;
     /* float: left; */
     height: 430px;
     /* margin-top: 40px; */
     background-image: url('img/portfolio.jpg');
     background-size: 100%;
     background-position: center;
+    width: 100%;
 }
 
 .image1 {
@@ -150,15 +159,18 @@ li.button_contact h3 {
     width: 100%;
     height: 300px;
     background-color: white;
+    display: inline-block;
 }
 
 .skills h1 {
     text-align: center;
-    margin-top: 40px;
+   
 }
 
 .skills h3 {
     font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .tools {
@@ -191,11 +203,11 @@ li.button_contact h3 {
 
 .experience {
     width: 100%;
-    height: 327px;
+    height: 264px;
     background-image: url('img/exp_image.jpg');
     background-position: center;
-    margin-top: 68px;
     opacity: 0.7;
+    display: flex;
 }
 
 .exp .my_work {
@@ -209,18 +221,21 @@ li.button_contact h3 {
     height: 100%;
     width: 100%;
 }
+.exp img{
+    height: 44px;
+    width: 52px;
+}
 
 .exp h1 {
     color: #F5F8FC;
     text-align: center;
-    font-size: 44px;
     margin: 0px;
 }
 
 .exp p {
     color: #F5F8FC;
     text-align: center;
-    font-size: 25px;
+    font-size: 19px;
     margin: 0px;
 }
 
@@ -228,6 +243,7 @@ li.button_contact h3 {
     width: 100%;
     height: 897px;
     background-color: #F6F4F4;
+    display: flow-root;
 }
 
 .my_project h1 {
@@ -257,14 +273,16 @@ li.button_contact h3 {
 }
 
 .last {
-    height: 275px;
+    height: 213px;
     text-align: center;
+    width: 100%;
 }
 
 .last h1 {
-    font-size: 52px;
-    margin-top: 20px;
+    font-size: 39px;
+    /* margin-top: 20px; */
     margin-bottom: 0px;
+}
 }
 
 .last p {
@@ -280,6 +298,7 @@ li.button_contact h3 {
     /* border-top: 1px solid #e5e5e5; */
     height: 230px;
     font-family: sans-serif;
+    display: flex;
 }
 
 .social {
