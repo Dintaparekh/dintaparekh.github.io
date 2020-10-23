@@ -1,195 +1,236 @@
-<!DOCTYPE html5>
-<head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<script src="portfolio.js"></script>
+<!DOCTYPE html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <ul class="navbar__link-container">
+                        <li class="navbar__link"><a href="#home">Home</a></li>
+                        <li class="navbar__link"><a href="#about-me">About Me</a></li>
+                        <li class="navbar__link"><a href="#experience">Experience</a></li>
+                        <li class="navbar__link"><a href="#skills">Skill</a></li>
+                        <li class="navbar__link"><a href="#portfolio">Portfolio</a></li>
+                        <li class="navbar__link"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="navbar__cta button button-primary">Contact Me</a>
+                </div>
+            </nav>
+        </header>
 
-<body>
-    <div class="header">
-        <div class="navigation">
-            <ul class="link">
-                <li><a href="#home">
-                        <h3>HOME</h3>
-                    </a></li>
-                <li><a href="#Exp">
-                        <h3>EXPERIENCE</h3>
-                    </a></li>
-                <li><a href="#skill">
-                        <h3>SKILLS</h3>
-                    </a></li>
-                <li><a href="#portfolio">
-                        <h3>PORTFOLIOS</h3>
-                    </a></li>
-                <li><a href="#contact">
-                        <h3>CONTACT</h3>
-                    </a></li>
-                <li class="button_contact">
-                    <h3><a href="#number">CONTACT ME</a></h3>
-                </li>
-            </ul>
-        </div>
-
-        <div class="info">
-            <h1>I'M DINTA PAREKH <br> WEB DEVELOPER AND DESIGNER</h1>
-            <p>I love and know how to create unique and beautiful websites.<br>
-                Also doing my work with determination to discover creative <br>
-                ideas and solve complex problems.</p>
-            <button class="button"><a
-                    href="https://drive.google.com/file/d/1UbIChIThWB8twcTaCCXrDHGdfz0U00tm/view?usp=sharing"
-                    target="_blank">DOWNLOAD RESUME</a></button>
-        </div>
-
-    </div>
-
-    <div class="about" id="home">
-        <div class="image1">
-            <img src="img/profile.jpeg" />
-        </div>
-        <div class="intro">
-            <h1>ABOUT ME</h1>
-            <p>Welcome to my portfolio. I am thrilled you’ve come to visit my showcase of work that <br>
-                I’ve compiled over the years, which includes a combination of student work, <br>
-                web application and personal projects. Take a look and feel free to get in touch <br>
-                if you’d like to discuss potential opportunities to work together.</p>
-            <button class="hire"><a href="mailto:dintaparekh.595@gmail.com">HIRE ME</a></button>
-            <button class="resume"><a
-                    href="https://drive.google.com/file/d/1UbIChIThWB8twcTaCCXrDHGdfz0U00tm/view?usp=sharing"
-                    target="_blank">MY RESUME</a></button>
-
-        </div>
-    </div>
-
-    <div class="skills" id="skill">
-        <h1>MY SKILLS</h1>
-        <div class="tools">
-            <h3>UI/UX Designing, Adobe XD, Illustrator</h3>
-            <div id="myProgress">
-                <div id="myBar" style="height:30px;width:80% ">80%</div>
-            </div>
-            <h3>WordPress</h3>
-            <div id="myProgress">
-                <div id="myBar" style="height:30px;width:60% ">60%</div>
-            </div>
-
-            <h3>BootStrap, jQuery</h3>
-            <div id="myProgress">
-                <div id="myBar" style="height:30px;width:40% ">40%</div>
+        <div class="jumbotron" id="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h1 class="jumbotron__title">I'm Dinta Parekh <br> Web Developer and Designer</h1>
+                        <p class="jumbotron__text">I love and know how to create unique and beautiful websites.<br>
+                            Also doing my work with determination to discover creative <br>
+                            ideas and solve complex problems.</p>
+                        <a class="jumbotron__cta button button-primary" href="docs/resume_2020.pdf" target="_blank">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="languages">
-            <h3>PHP, HTML5, CSS3, JavaScript</h3>
-            <div id="myProgress">
-                <div id="myBar" style="height:30px;width:70% ">70%</div>
-            </div>
 
-            <h3>Java</h3>
-            <div id="myProgress">
-                <div id="myBar" style="height:30px;width:50% ">50%</div>
+        <div class="about-me" id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="about-me__image-container col-12 col-md-4">
+                        <img class="about-me__image" src="img/profile.jpeg">
+                    </div>
+                    <div class="about-me__content-container col-12 col-md-6">
+                        <div class="about-me__content">
+                            <h2 class="about-me__title">About Me</h2>
+                            <p class="about-me__text">
+                                Welcome to my portfolio. I am thrilled you’ve come to visit my showcase of work that I’ve compiled over the years, which includes a combination of student work, web application and personal projects. Take a look and feel free to get in touch if you’d like to discuss potential opportunities to work together.
+                            </p>
+                            <a class="about-me__cta button button-dark" href="mailto:dintaparekh.595@gmail.com">Hire Me</a>
+                            <a class="about-me__cta button button-dark" href="docs/resume_2020.pdf" target="_blank">My Resume</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <h3>Python, C, C++</h3>
-            <div id="myProgress">
-                <div id="myBar" style="height:30px;width:50% ">50%</div>
+            
+            <div class="about-me__content-container">
+                
             </div>
         </div>
-    </div>
 
-    <div class="experience" id="Exp">
-        <div class="exp">
-            <div class="my_work">
-                <img src="img/edu.png" />
-                <h1>3+</h1>
-                <p>Experience During Education</p>
-
+        <div class="skills" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="skills__title">My Skills</h2>
+                    </div>
+                    <div class="skills__bar-container col-12 col-md-6">
+                        <div class="skills__bar">
+                            <h3 class="skills__bar__title">UI/UX Designing, Adobe XD, Illustrator</h3>
+                            <div class="skills__bar__base">
+                                <div class="skills__bar__progress" style="width:80%">80%</div>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <h3 class="skills__bar__title">WordPress</h3>
+                            <div class="skills__bar__base">
+                                <div class="skills__bar__progress" style="width:60%">60%</div>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <h3 class="skills__bar__title">BootStrap, jQuery</h3>
+                            <div class="skills__bar__base">
+                                <div class="skills__bar__progress" style="width:40%">40%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__bar-container col-12 col-md-6">
+                        <div class="skills__bar">
+                            <h3 class="skills__bar__title">PHP, HTML5, CSS3, JavaScript</h3>
+                            <div class="skills__bar__base">
+                                <div class="skills__bar__progress" style="width:70%">70%</div>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <h3 class="skills__bar__title">Java</h3>
+                            <div class="skills__bar__base">
+                                <div class="skills__bar__progress" style="width:50%">50%</div>
+                            </div>
+                        </div>
+                        <div class="skills__bar">
+                            <h3 class="skills__bar__title">Python, C, C++</h3>
+                            <div class="skills__bar__base">
+                                <div class="skills__bar__progress" style="width:50%">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="my_work">
-                <img src="img/projects.png" />
-                <h1>10+</h1>
-                <p>Projects</p>
-            </div>
-            <div class="my_work">
-                <img src="img/computer.png" />
-                <h1>2+</h1>
-                <p>Years Of Field Experience</p>
-            </div>
-
         </div>
-    </div>
 
-    <div class="my_project" id="portfolio">
-        <h1>RECENT PROJECTS</h1>
-        <div class="table">
-            <table cellpadding="5" class="web_page">
-                <tr>
-                    <td onclick="openLink('https://drive.google.com/file/d/1VqcXCQy5k2OvuTR5BF4ytDXWLD89bC1g/view?usp=sharing')">
-                        <img src="img/design_project.png" class="t_image" height="230px" width="400px" />
-                        <p>E campus website</p>
-                    </td>
-                    <td onclick="openLink('https://drive.google.com/file/d/1u5h2PTPq8F-jul_iQb979ZtexdbhKDLV/view?usp=sharing')">
-                        <img src="img/travel_project.png" class="t_image" height="230px" width="400px" />
-                        <p>TravelO city app</p>
-                    </td>
-                    <td onclick="openLink('https://xd.adobe.com/view/956d491b-5673-45c6-5c31-3de6c8cc53ed-e35c/')">
-                        <img src="img/fitness page.png" class="t_image" height="300px" width="400px" />
-                        <p>FATBURN Fitness website<br> page design</p>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td onclick="openLink('https://geocosmancy.com/')">
-                        <img src="img/geomancy.jpg" class="t_image" height="300px" width="400px" />
-                        <p>geocosmancy.com</p>
-                    </td>
-
-                    <td onclick="openLink('https://xd.adobe.com/view/7e6ca4ea-3122-4ab4-48a3-d0a21e9c4c78-085d/')">
-                        <img src="img/dashboard.png" class="t_image" height="230px" width="400px" />
-                        <p>Dashboard web page</p>
-                    </td>
-                    <td onclick="openLink('https://xd.adobe.com/view/a1e561c3-712f-40f5-71e7-bf31f4b27381-d7d4/')">
-                        <img src="img/bank app.png" class="t_image" height="300px" width="200px" />
-                        <p>Bank Application <br>web page</p>
-                    </td>
-                </tr>
-            </table>
+        <div class="experience" id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="experience__item col-12 col-md-4">
+                        <img class="experience__item__image" src="img/edu.png">
+                        <h2 class="experience__item__title">3+</h2>
+                        <p class="experience__item__text">Experience During Education</p>
+                    </div>
+                    <div class="experience__item col-12 col-md-4">
+                        <img class="experience__item__image" src="img/projects.png">
+                        <h2 class="experience__item__title">10+</h2>
+                        <p class="experience__item__text">Projects</p>
+                    </div>
+                    <div class="experience__item col-12 col-md-4">
+                        <img class="experience__item__image" src="img/computer.png">
+                        <h2 class="experience__item__title">2+</h2>
+                        <p class="experience__item__text">Years Of Field Experience</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="last" id="contact">
-        <h1>Willing to give me an opportunity?</h1>
-        <button class="hire"><a href="mailto:dintaparekh.595@gmail.com">HIRE ME</a></button>
-    </div>
-
-    <div class="footer" id="number">
-        <div class="social">
-            <div class="get_touch">
-                <h2 class="header_touch">GET IN TOUCH</h2>
-                <p>dintaparekh.595@gmail.com</p>
-
-                <p>289-339-9189</p>
-
-                <p>35, Topbank dr <br>Etobicoke, ON M9W 7B8</p>
+        <div class="portfolio" id="portfolio">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="portfolio__title">Recent Projects</h2>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-4">
+                        <a href="docs/desiging_pages.zip" target="_blank">
+                            <img src="img/design_project.png" class="portfolio__image" />
+                            <p class="portfolio__item__header">E Campus website</p>
+                        </a>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-4">
+                        <a href="docs/project_application_screenshot.zip" target="_blank">
+                            <img src="img/travel_project.png" class="portfolio__image">
+                            <p class="portfolio__item__header">TravelO city app</p>
+                        </a>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-4">
+                        <a href="https://xd.adobe.com/view/956d491b-5673-45c6-5c31-3de6c8cc53ed-e35c/" target="_blank">
+                            <img src="img/fitness page.png" class="portfolio__image">
+                            <p class="portfolio__item__header">FATBURN Fitness website<br> page design</p>
+                        </a>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-4">
+                        <a href="https://geocosmancy.com/" target="_blank">
+                            <img src="img/geomancy.jpg" class="portfolio__image">
+                            <p class="portfolio__item__header">geocosmancy.com</p>
+                        </a>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-4">
+                        <a href="https://xd.adobe.com/view/7e6ca4ea-3122-4ab4-48a3-d0a21e9c4c78-085d/" target="_blank">
+                            <img src="img/dashboard.png" class="portfolio__image">
+                            <p class="portfolio__item__header">Dashboard web page</p>
+                        </a>
+                    </div>
+                    <div class="portfolio__item col-12 col-md-4">
+                        <a href="https://xd.adobe.com/view/a1e561c3-712f-40f5-71e7-bf31f4b27381-d7d4/" target="_blank">
+                            <img src="img/bank app.png" class="portfolio__image">
+                            <p class="portfolio__item__header">Bank Application <br>web page</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-            <div class="get_touch">
-                <a href="#home">ABOUT ME</a>
-                <a href="#portfolio">PORTFOLIO</a>
-                <a href="#skill">SKILLS</a>
-                <button class="button1"><a
-                        href="https://drive.google.com/file/d/1UbIChIThWB8twcTaCCXrDHGdfz0U00tm/view?usp=sharing"
-                        target="_blank">DOWNLOAD RESUME</a></button>
-
-            </div>
-            <div class="get_touch social_touch">
-                <h2 class="header_touch">SOCIAL TOUCH</h2>
-                <a href="#"><img src="img/facebook.png" onclick="openLink('https://www.facebook.com/dinta.parekh')"></a>
-                <a href="#"><img src="img/linkdin.png" onclick="openLink('https://www.linkedin.com/in/dinta-parekh-707656157/')"></a>
-                <a href="#"><img src="img/github.png" onclick="openLink('https://github.com/Dintaparekh')"></a>
-            </div>
-
         </div>
-    </div>
 
-</body>
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact__title">Willing to give me an opportunity?</h2>
+                        <a class="button button-dark contact__cta" href="mailto:dintaparekh.595@gmail.com">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <footer>
+            <div class="footer" id="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="footer__block col-12 col-md-3">
+                            <h2 class="footer__header">Get in touch</h2>
+                            <p>dintaparekh.595@gmail.com</p>
+                            <p>289-339-9189</p>
+                            <p>35, Topbank dr Etobicoke, ON M9W 7B8</p>
+                        </div>
+                        <div class="footer__block col-12 col-md-3">
+                            <a class="footer__link" href="#about-me">About Me</a>
+                            <a class="footer__link" href="#portfolio">Portfolio</a>
+                            <a class="footer__link" href="#skills">Skills</a>
+                            <a class="footer__cta button button-primary" href="docs/resume_2020.pdf" target="_blank">Download Resume</a>
+                        </div>
+                        <div class="footer__block col-12 col-md-3">
+                            <h2 class="header_touch">Social Links</h2>
+                            <a class="footer__socialLink" href="https://www.facebook.com/dinta.parekh">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a class="footer__socialLink" href="https://www.linkedin.com/in/dinta-parekh-707656157">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                            <a class="footer__socialLink" href="https://github.com/Dintaparekh">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!-- Ionicons -->
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <!-- Custom -->
+        <script src="js/navbar.js"></script>
+    </body>
 </html>
