@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         
@@ -8,18 +9,21 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <ul class="navbar__link-container">
-                        <li class="navbar__link"><a href="#home">Home</a></li>
-                        <li class="navbar__link"><a href="#about-me">About Me</a></li>
-                        <li class="navbar__link"><a href="#experience">Experience</a></li>
-                        <li class="navbar__link"><a href="#skills">Skill</a></li>
-                        <li class="navbar__link"><a href="#portfolio">Portfolio</a></li>
-                        <li class="navbar__link"><a href="#contact">Contact</a></li>
-                    </ul>
-                    <a href="#contact" class="navbar__cta button button-primary">Contact Me</a>
-                </div>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar__link-container" aria-controls="navbar__link-container" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar__link-container collapse navbar-collapse" id="navbar__link-container">
+                    <div class="navbar-nav">
+                        <li class="navbar__link nav-item active"><a href="#home">Home</a></li>
+                        <li class="navbar__link nav-item"><a href="#about-me">About Me</a></li>
+                        <li class="navbar__link nav-item"><a href="#experience">Experience</a></li>
+                        <li class="navbar__link nav-item"><a href="#skills">Skill</a></li>
+                        <li class="navbar__link nav-item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="navbar__link nav-item"><a href="#contact">Contact</a></li>
+                    </div>
+                </ul>
+                <a href="#contact" class="navbar__cta button button-primary">Contact Me</a>
             </nav>
         </header>
 
